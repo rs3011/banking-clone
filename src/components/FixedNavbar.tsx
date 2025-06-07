@@ -44,6 +44,7 @@ export default function FixedNavbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [isSearchOpen, setIsSearchOpen] = useState(false);
   const { isAuthenticated } = useAuth();
+  const location = useLocation();
 
   // Determine which primary nav item is active based on current path
   const getActiveSection = () => {
@@ -83,7 +84,7 @@ export default function FixedNavbar() {
             <Link to="/locations" className="text-white hover:text-wells-yellow transition text-sm">
               ATMs/Locations
             </Link>
-            <Link to="/help" className="text-white hover:text-wells-yellow transition text-sm">
+            <Link to="/support" className="text-white hover:text-wells-yellow transition text-sm">
               Help
             </Link>
             <Link to="/espanol" className="text-white hover:text-wells-yellow transition text-sm">
