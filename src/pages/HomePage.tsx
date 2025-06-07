@@ -31,7 +31,7 @@ const HomePage: React.FC = () => {
             </div>
             <div className="md:w-1/2">
               <img 
-                src="https://images.pexels.com/photos/3943723/pexels-photo-3943723.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
+                src="" 
                 alt="Happy family planning finances" 
                 className="rounded-lg shadow-lg w-full"
               />
