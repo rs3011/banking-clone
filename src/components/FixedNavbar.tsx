@@ -44,7 +44,6 @@ export default function FixedNavbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [isSearchOpen, setIsSearchOpen] = useState(false);
   const { isAuthenticated } = useAuth();
-  const location = useLocation();
 
   // Determine which primary nav item is active based on current path
   const getActiveSection = () => {
