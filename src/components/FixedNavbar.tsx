@@ -65,8 +65,8 @@ export default function FixedNavbar() {
 
   return (
     <>
-      {/* Fixed Navigation Container */}
-      <div className="fixed top-0 left-0 right-0 z-50">
+      {/* Navigation Container - No fixed positioning */}
+      <div className="relative z-50">
         {/* ────────────────────────────── */}
         {/* 1) Top Red Header */}
         <div className="bg-[#d21a11] px-6 py-3 flex items-center justify-between">
@@ -256,9 +256,6 @@ export default function FixedNavbar() {
           </div>
         )}
       </div>
-
-      {/* Spacer to prevent content from being hidden behind fixed navbar */}
-      <div className="h-[120px] md:h-[140px]"></div>
     </>
   );
 }
