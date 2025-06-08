@@ -133,9 +133,10 @@ const LoginPage: React.FC = () => {
             </div>
             
             <button
+              <div className="flex justify-center">
               type="submit"
               disabled={isLoading}
-              className={`bg-wells-red text-white text-sm font-medium py-2.5 px-6 rounded-full hover:bg-wells-red-dark focus:outline-none focus:ring-2 focus:ring-wells-red focus:ring-opacity-50 transition-colors${
+              className={`bg-wells-red text-white text-sm font-medium py-2.5 px-10 rounded-full hover:bg-wells-red-dark focus:outline-none focus:ring-2 focus:ring-wells-red focus:ring-opacity-50 transition-colors${
                 isLoading ? 'opacity-70 cursor-not-allowed' : ''
               }`}
             >
