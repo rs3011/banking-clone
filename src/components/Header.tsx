@@ -14,78 +14,70 @@ const Header: React.FC = () => {
 
   return (
     <header className="bg-wells-red text-white shadow-md">
-      {/* Navigation Container - No fixed positioning */}
-      <div className="relative z-50">
-        {/* ────────────────────────────── */}
-        {/* 1) Top Red Header */}
-        <div className="bg-[#d21a11] px-6 py-3 flex items-center justify-between">
-          {/* Logo: "WELLS FARGO" on the left */}
-          <div>
-            <Link to="/">
-              <span className="text-white font-serif text-2xl tracking-widest font-bold">
-                WELLS FARGO
-              </span>
-            </Link>
-          </div>
+      
+      <div className="container mx-auto px-4">
+        {/* Top navigation bar */}
+        <div className="flex justify-between items-center py-3">
+          {/* Logo */}
+          <Link to="/" className="flex items-center space-x-2">
+            <span className="text-xl font-heading font-bold tracking-wide">WELLS FARGO</span>
+          </Link>
 
-          {/* Right‐side Links + Search + Sign On */}
-          <div className="hidden md:flex items-center space-x-6">
-            <Link to="/locations" className="text-white hover:text-wells-yellow transition text-sm">
-              ATMs/Locations
-            </Link>
-            <Link to="/support" className="text-white hover:text-wells-yellow transition text-sm">
-              Help
-            </Link>
-            <Link to="/espanol" className="text-white hover:text-wells-yellow transition text-sm">
-              Español
-            </Link>
+          {/* Desktop Navigation */}
+          <nav className="hidden md:flex items-center space-x-8">
+            <Link to="/banking" className="hover:underline font-medium">Banking</Link>
+            <Link to="/cards" className="hover:underline font-medium">Cards</Link>
+            <Link to="/support" className="hover:underline font-medium">Support</Link>
+            <Link to="/about" className="hover:underline font-medium">About Us</Link>
+          </nav>
 
-            {/* Search Icon */}
-            <button 
+          {/* Actions */}
+          <div className="flex items-center space-x-4">
+            <button
               onClick={toggleSearch}
-              className="text-white hover:text-wells-yellow transition"
+              className="p-2 rounded-full hover:bg-wells-red-dark"
               aria-label="Search"
             >
               <Search size={20} />
             </button>
 
-            {/* "Sign On" Button */}
             {isAuthenticated ? (
               <Link
                 to="/dashboard"
-                className="px-6 py-2 bg-white text-gray-800 rounded-full transition hover:shadow-lg hover:underline"
+                className="hidden md:flex items-center space-x-1 py-1 px-3 border border-white rounded hover:bg-wells-red-dark"
               >
-                My Account
+                <User size={18} />
+                <span>My Account</span>
               </Link>
             ) : (
               <Link
                 to="/login"
-                className="px-6 py-2 bg-white text-gray-800 rounded-full transition hover:shadow-lg hover:underline"
+                className="hidden md:flex items-center space-x-1 py-1 px-3 border border-white rounded hover:bg-wells-red-dark"
               >
-                Sign On
+                <User size={18} />
+                <span>Sign On</span>
               </Link>
             )}
-          </div>
 
-          {/* Mobile menu button */}
-          <button 
-            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="md:hidden text-white"
-            aria-label="Toggle menu"
-          >
-            {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
-          </button>
+            {/* Mobile menu button */}
+            <button 
+              onClick={toggleMenu}
+              className="md:hidden p-2 rounded-full hover:bg-wells-red-dark"
+              aria-label={isMenuOpen ? 'Close menu' : 'Open menu'}
+            >
+              {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+            </button>
+          </div>
         </div>
 
-        {/* Search bar (appears below red header when open) */}
+        {/* Search bar */}
         {isSearchOpen && (
-          <div className="bg-[#d21a11] px-6 py-3 border-t border-red-800">
-            <div className="relative max-w-xl mx-auto">
+          <div className="py-3 border-t border-wells-red-dark">
+            <div className="relative">
               <input
                 type="text"
                 placeholder="Search Wells Fargo"
-                className="w-full py-2 px-4 pr-10 rounded text-gray-800 focus:outline-none focus:ring-2 focus:ring-wells-yellow"
-                autoFocus
+                className="w-full py-2 px-4 pr-10 rounded text-gray-800 focus:outline-none"
               />
               <button className="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-600">
                 <Search size={20} />
@@ -94,10 +86,6 @@ const Header: React.FC = () => {
           </div>
         )}
 
-        {/* ────────────────────────────── */}
-        {/* 2) Yellow Separator Line */}
-        <div className="h-0.5 bg-wells-yellow"></div>
-        
         {/* Mobile menu */}
         {isMenuOpen && (
           <nav className="md:hidden py-3 border-t border-wells-red-dark">
