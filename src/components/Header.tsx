@@ -13,7 +13,8 @@ const Header: React.FC = () => {
   const toggleSearch = () => setIsSearchOpen(!isSearchOpen);
 
   return (
-    
+    <header className="bg-wells-red text-white shadow-md">
+      {/* Navigation Container - No fixed positioning */}
       <div className="relative z-50">
         {/* ────────────────────────────── */}
         {/* 1) Top Red Header */}
@@ -96,7 +97,7 @@ const Header: React.FC = () => {
         {/* ────────────────────────────── */}
         {/* 2) Yellow Separator Line */}
         <div className="h-0.5 bg-wells-yellow"></div>
-
+        
         {/* Mobile menu */}
         {isMenuOpen && (
           <nav className="md:hidden py-3 border-t border-wells-red-dark">
