@@ -131,9 +131,9 @@ const LoginPage: React.FC = () => {
                 Forgot username/password?
               </a>
             </div>
-            
+
+            <div className="flex justify-center">
             <button
-              <div className="flex justify-center">
               type="submit"
               disabled={isLoading}
               className={`bg-wells-red text-white text-sm font-medium py-2.5 px-9 rounded-full hover:bg-wells-red-dark focus:outline-none focus:ring-2 focus:ring-wells-red focus:ring-opacity-50 transition-colors${
@@ -142,6 +142,7 @@ const LoginPage: React.FC = () => {
             >
               {isLoading ? 'Signing in...' : 'Sign On'}
             </button>
+            </div>
 
             <div className="mt-6 text-center">
               <a href="#" className="text-wells-red hover:text-wells-red-dark transition-colors font-medium">
