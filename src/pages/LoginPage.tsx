@@ -50,7 +50,7 @@ const LoginPage: React.FC = () => {
       }}
     >
       
-      <div className="relative w-full max-w-md px-6 py-8 z-10">
+      <div className="relative w-full max-w-xl px-6 py-8 z-10">
            <div className="rounded-2xl p-8 shadow-lg bg-white/90 backdrop-blur-sm ring-1 ring-black/10 transition-all duration-300">
           <div className="text-center mb-8">
             <h1 className="text-2xl font-bold text-gray-800">Good morning</h1>
