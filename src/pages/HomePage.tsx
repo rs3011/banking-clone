@@ -191,7 +191,7 @@ const HomePage: React.FC = () => {
                         New customers open an eligible checking account with qualifying direct deposits
                       </p>
                       <p className="text-lg mb-8 text-red-200">
-                        Plus, enjoy convenient banking with no minimum balance and easy mobile banking.
+                        Plus, enjoy convenient banking with no minimum balance and easy mobile banking
                       </p>
                       <Link 
                         to="/personal/checking" 
