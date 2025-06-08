@@ -188,7 +188,7 @@ const HomePage: React.FC = () => {
                         $325 checking bonus on us
                       </h1>
                       <p className="text-xl lg:text-2xl mb-6 text-red-100">
-                        Open a new Everyday Checking account and get a $325 bonus when you meet the requirements.
+                        New customers open an eligible checking account with qualifying direct deposits
                       </p>
                       <p className="text-lg mb-8 text-red-200">
                         Plus, enjoy convenient banking with no minimum balance and easy mobile banking.
