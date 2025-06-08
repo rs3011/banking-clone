@@ -53,7 +53,7 @@ const LoginPage: React.FC = () => {
       <div className="absolute inset-0 bg-black bg-opacity-50"></div>
 
       <div className="relative w-full max-w-md px-6 py-8">
-        <div className="bg-white bg-opacity-90 backdrop-blur-sm rounded shadow-xl p-8 transform transition-all duration-300 hover:shadow-2xl">
+        <div className="bg-white bg-opacity-90 backdrop-blur-sm rounded-xl shadow-xl p-8 transform transition-all duration-300 hover:shadow-2xl">
           <div className="text-center mb-8">
             <h1 className="text-2xl font-bold text-gray-800">Good morning</h1>
             <p className="text-gray-600 mt-2">Sign on to manage your accounts.</p>
