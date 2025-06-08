@@ -78,7 +78,7 @@ const LoginPage: React.FC = () => {
                 onChange={(e) => setEmail(e.target.value)}
                 className={`w-full px-4 py-3 border ${
                   error && !email ? 'border-red-500' : 'border-gray-300'
-                } rounded-md focus:outline-none focus:ring-2 focus:ring-wells-red focus:border-transparent transition-colors`}
+                } rounded-full focus:outline-none focus:ring-2 focus:ring-wells-red focus:border-transparent transition-colors`}
                 placeholder="Enter username"
               />
               {error && !email && (
@@ -98,7 +98,7 @@ const LoginPage: React.FC = () => {
                   onChange={(e) => setPassword(e.target.value)}
                   className={`w-full px-4 py-3 border ${
                     error && !password ? 'border-red-500' : 'border-gray-300'
-                  } rounded-md focus:outline-none focus:ring-2 focus:ring-wells-red focus:border-transparent pr-10 transition-colors`}
+                  } rounded-full focus:outline-none focus:ring-2 focus:ring-wells-red focus:border-transparent pr-10 transition-colors`}
                   placeholder="Enter password"
                 />
                 <button
@@ -135,7 +135,7 @@ const LoginPage: React.FC = () => {
             <button
               type="submit"
               disabled={isLoading}
-              className={`w-full bg-wells-red text-white font-medium py-3 px-4 rounded-md hover:bg-wells-red-dark focus:outline-none focus:ring-2 focus:ring-wells-red focus:ring-opacity-50 transition-colors ${
+              className={`w-full bg-wells-red text-white font-medium py-3 px-4 rounded-full hover:bg-wells-red-dark focus:outline-none focus:ring-2 focus:ring-wells-red focus:ring-opacity-50 transition-colors ${
                 isLoading ? 'opacity-70 cursor-not-allowed' : ''
               }`}
             >
