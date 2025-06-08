@@ -142,6 +142,7 @@ const LoginPage: React.FC = () => {
             >
               {isLoading ? 'Signing in...' : 'Sign On'}
             </button>
+          </div>
 
             <div className="mt-6 text-center">
               <a href="#" className="text-wells-red hover:text-wells-red-dark transition-colors font-medium">
