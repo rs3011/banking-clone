@@ -49,10 +49,12 @@ const LoginPage: React.FC = () => {
         backgroundSize: 'cover'
       }}
     >
-
+<div className="absolute inset-0 backdrop-blur-sm z-0"></div>
+      
       <div className="relative w-full max-w-md px-6 py-8 z-10">
-        <div className="relative z-10 w-full max-w-md p-8 rounded-2xl bg-white/90 shadow-xl">
-    <h1 className="text-2xl font-serif text-center text-gray-800 mb-6">Good morning</h1>
+           <div className="rounded-xl p-8 shadow-[0_8px_30px_rgba(0,0,0,0.3)] bg-white/80 backdrop-blur-md ring-1 ring-black/10 transition-all duration-300">
+          <div className="text-center mb-8">
+            <h1 className="text-2xl font-bold text-gray-800">Good morning</h1>
             <p className="text-gray-600 mt-2">Sign on to manage your accounts.</p>
           </div>
           
