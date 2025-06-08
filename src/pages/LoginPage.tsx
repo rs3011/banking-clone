@@ -44,7 +44,7 @@ const LoginPage: React.FC = () => {
     <div 
       className="min-h-screen flex items-center justify-center bg-cover bg-center bg-no-repeat"
       style={{
-        backgroundImage: 'url(https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2)',
+        backgroundImage: '/public/assets/login_bg.png',
         backgroundPosition: 'center',
         backgroundSize: 'cover'
       }}
