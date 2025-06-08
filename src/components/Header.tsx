@@ -13,7 +13,7 @@ const Header: React.FC = () => {
   const toggleSearch = () => setIsSearchOpen(!isSearchOpen);
 
   return (
-    {/* Navigation Container - No fixed positioning */}
+    
       <div className="relative z-50">
         {/* ────────────────────────────── */}
         {/* 1) Top Red Header */}
