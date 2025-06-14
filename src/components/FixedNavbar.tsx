@@ -73,7 +73,7 @@ export default function FixedNavbar() {
           {/* Logo: "WELLS FARGO" on the left */}
           <div>
             <Link to="/">
-              <span className="text-white font-serif text-2xl tracking-widest font-bold">
+              <span className="text-white font-sans text-2xl tracking-widest font-bold">
                 WELLS FARGO
               </span>
             </Link>
