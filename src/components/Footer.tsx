@@ -13,7 +13,7 @@ const Footer: React.FC = () => {
             <ul className="space-y-2">
               <li>
                 <Link 
-                  to="/banking" 
+                  to = "/banking" 
                   className="text-black hover:underline hover:text-gray-700"  {/* Changed text-gray-300 → text-black & hover:text-white → hover:text-gray-700 */} >
                   Checking Accounts
                 </Link>
