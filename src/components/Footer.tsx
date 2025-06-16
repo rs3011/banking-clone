@@ -14,8 +14,7 @@ const Footer: React.FC = () => {
               <li>
                 <Link 
                   to="/banking" 
-                  className="text-black hover:underline hover:text-gray-700"  {/* Changed text-gray-300 → text-black & hover:text-white → hover:text-gray-700 */}
-                >
+                  className="text-black hover:underline hover:text-gray-700"  {/* Changed text-gray-300 → text-black & hover:text-white → hover:text-gray-700 */} >
                   Checking Accounts
                 </Link>
               </li>
