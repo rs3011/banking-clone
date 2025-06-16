@@ -10,7 +10,7 @@ const Footer: React.FC = () => {
           <div>
             <h3 className="text-lg font-bold mb-4">Banking</h3>
             <ul className="space-y-2">
-              <li><Link to="/banking" className="hover:underline text-black-300">Checking Accounts</Link></li>
+              <li><Link to="/banking" className="hover:underline text-black-400">Checking Accounts</Link></li>
               <li><Link to="/banking" className="hover:underline text-gray-300">Savings Accounts</Link></li>
               <li><Link to="/banking" className="hover:underline text-gray-300">CDs</Link></li>
               <li><Link to="/banking" className="hover:underline text-gray-300">Credit Cards</Link></li>
