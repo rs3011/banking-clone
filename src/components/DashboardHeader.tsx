@@ -20,7 +20,7 @@ const DashboardHeader: React.FC = () => {
         <div className="flex justify-between items-center py-3">
           {/* Logo */}
           <Link to="/dashboard" className="flex items-center space-x-2">
-            <span className="text-xl font-heading font-bold tracking-wide">WELLS FARGO</span>
+            <span className="text-xl font-heading font-sans font-bold tracking-wide">WELLS FARGO</span>
           </Link>
 
           {/* Desktop Navigation */}
